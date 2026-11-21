@@ -1,0 +1,728 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMR7RxlLfK0VDz94jU8HSCo",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    },
+    "widgets": {
+      "application/vnd.jupyter.widget-state+json": {
+        "version_major": 2,
+        "version_minor": 0,
+        "state": {
+          "aad1c4c6cafd4f4abc9ad4d137c52fb3": {
+            "model_module": "@jupyter-widgets/controls",
+            "model_name": "TextModel",
+            "model_module_version": "1.5.0",
+            "state": {
+              "_dom_classes": [],
+              "_model_module": "@jupyter-widgets/controls",
+              "_model_module_version": "1.5.0",
+              "_model_name": "TextModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/controls",
+              "_view_module_version": "1.5.0",
+              "_view_name": "TextView",
+              "continuous_update": true,
+              "description": "🔍 Search:",
+              "description_tooltip": null,
+              "disabled": false,
+              "layout": "IPY_MODEL_590b3dd9d4a74d648ee81fbc3e46031f",
+              "placeholder": "Enter Employee ID or Name (e.g., emp101, shubham)...",
+              "style": "IPY_MODEL_f019ceaf3e304ff798e5cc6ca7c58aa4",
+              "value": "shubham"
+            }
+          },
+          "590b3dd9d4a74d648ee81fbc3e46031f": {
+            "model_module": "@jupyter-widgets/base",
+            "model_name": "LayoutModel",
+            "model_module_version": "1.2.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/base",
+              "_model_module_version": "1.2.0",
+              "_model_name": "LayoutModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "LayoutView",
+              "align_content": null,
+              "align_items": null,
+              "align_self": null,
+              "border": null,
+              "bottom": null,
+              "display": null,
+              "flex": null,
+              "flex_flow": null,
+              "grid_area": null,
+              "grid_auto_columns": null,
+              "grid_auto_flow": null,
+              "grid_auto_rows": null,
+              "grid_column": null,
+              "grid_gap": null,
+              "grid_row": null,
+              "grid_template_areas": null,
+              "grid_template_columns": null,
+              "grid_template_rows": null,
+              "height": null,
+              "justify_content": null,
+              "justify_items": null,
+              "left": null,
+              "margin": null,
+              "max_height": null,
+              "max_width": null,
+              "min_height": null,
+              "min_width": null,
+              "object_fit": null,
+              "object_position": null,
+              "order": null,
+              "overflow": null,
+              "overflow_x": null,
+              "overflow_y": null,
+              "padding": null,
+              "right": null,
+              "top": null,
+              "visibility": null,
+              "width": "400px"
+            }
+          },
+          "f019ceaf3e304ff798e5cc6ca7c58aa4": {
+            "model_module": "@jupyter-widgets/controls",
+            "model_name": "DescriptionStyleModel",
+            "model_module_version": "1.5.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/controls",
+              "_model_module_version": "1.5.0",
+              "_model_name": "DescriptionStyleModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "StyleView",
+              "description_width": ""
+            }
+          },
+          "d9624699e4e246d9924c8bde3c34a5d6": {
+            "model_module": "@jupyter-widgets/controls",
+            "model_name": "HBoxModel",
+            "model_module_version": "1.5.0",
+            "state": {
+              "_dom_classes": [],
+              "_model_module": "@jupyter-widgets/controls",
+              "_model_module_version": "1.5.0",
+              "_model_name": "HBoxModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/controls",
+              "_view_module_version": "1.5.0",
+              "_view_name": "HBoxView",
+              "box_style": "",
+              "children": [
+                "IPY_MODEL_8590338d4bc34821a8f4616535b9f56a",
+                "IPY_MODEL_16b81312735c4de39bb9217f6e9c25fd"
+              ],
+              "layout": "IPY_MODEL_1c088ff2da41422b9d6e15f98e03281a"
+            }
+          },
+          "8590338d4bc34821a8f4616535b9f56a": {
+            "model_module": "@jupyter-widgets/controls",
+            "model_name": "ButtonModel",
+            "model_module_version": "1.5.0",
+            "state": {
+              "_dom_classes": [],
+              "_model_module": "@jupyter-widgets/controls",
+              "_model_module_version": "1.5.0",
+              "_model_name": "ButtonModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/controls",
+              "_view_module_version": "1.5.0",
+              "_view_name": "ButtonView",
+              "button_style": "info",
+              "description": "📄 View Salary Slip",
+              "disabled": false,
+              "icon": "",
+              "layout": "IPY_MODEL_8ba02700da48442a808211f62182c9a5",
+              "style": "IPY_MODEL_f71c84767a2e4b8586db4b5cb6355077",
+              "tooltip": ""
+            }
+          },
+          "16b81312735c4de39bb9217f6e9c25fd": {
+            "model_module": "@jupyter-widgets/controls",
+            "model_name": "ButtonModel",
+            "model_module_version": "1.5.0",
+            "state": {
+              "_dom_classes": [],
+              "_model_module": "@jupyter-widgets/controls",
+              "_model_module_version": "1.5.0",
+              "_model_name": "ButtonModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/controls",
+              "_view_module_version": "1.5.0",
+              "_view_name": "ButtonView",
+              "button_style": "success",
+              "description": "📧 Send to Gmail",
+              "disabled": false,
+              "icon": "",
+              "layout": "IPY_MODEL_ad66d237b1f747b7b219dc87e8890b83",
+              "style": "IPY_MODEL_4a643d0e838f4d55aa194bad96b9cdae",
+              "tooltip": ""
+            }
+          },
+          "1c088ff2da41422b9d6e15f98e03281a": {
+            "model_module": "@jupyter-widgets/base",
+            "model_name": "LayoutModel",
+            "model_module_version": "1.2.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/base",
+              "_model_module_version": "1.2.0",
+              "_model_name": "LayoutModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "LayoutView",
+              "align_content": null,
+              "align_items": null,
+              "align_self": null,
+              "border": null,
+              "bottom": null,
+              "display": null,
+              "flex": null,
+              "flex_flow": null,
+              "grid_area": null,
+              "grid_auto_columns": null,
+              "grid_auto_flow": null,
+              "grid_auto_rows": null,
+              "grid_column": null,
+              "grid_gap": null,
+              "grid_row": null,
+              "grid_template_areas": null,
+              "grid_template_columns": null,
+              "grid_template_rows": null,
+              "height": null,
+              "justify_content": null,
+              "justify_items": null,
+              "left": null,
+              "margin": null,
+              "max_height": null,
+              "max_width": null,
+              "min_height": null,
+              "min_width": null,
+              "object_fit": null,
+              "object_position": null,
+              "order": null,
+              "overflow": null,
+              "overflow_x": null,
+              "overflow_y": null,
+              "padding": null,
+              "right": null,
+              "top": null,
+              "visibility": null,
+              "width": null
+            }
+          },
+          "8ba02700da48442a808211f62182c9a5": {
+            "model_module": "@jupyter-widgets/base",
+            "model_name": "LayoutModel",
+            "model_module_version": "1.2.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/base",
+              "_model_module_version": "1.2.0",
+              "_model_name": "LayoutModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "LayoutView",
+              "align_content": null,
+              "align_items": null,
+              "align_self": null,
+              "border": null,
+              "bottom": null,
+              "display": null,
+              "flex": null,
+              "flex_flow": null,
+              "grid_area": null,
+              "grid_auto_columns": null,
+              "grid_auto_flow": null,
+              "grid_auto_rows": null,
+              "grid_column": null,
+              "grid_gap": null,
+              "grid_row": null,
+              "grid_template_areas": null,
+              "grid_template_columns": null,
+              "grid_template_rows": null,
+              "height": null,
+              "justify_content": null,
+              "justify_items": null,
+              "left": null,
+              "margin": null,
+              "max_height": null,
+              "max_width": null,
+              "min_height": null,
+              "min_width": null,
+              "object_fit": null,
+              "object_position": null,
+              "order": null,
+              "overflow": null,
+              "overflow_x": null,
+              "overflow_y": null,
+              "padding": null,
+              "right": null,
+              "top": null,
+              "visibility": null,
+              "width": "195px"
+            }
+          },
+          "f71c84767a2e4b8586db4b5cb6355077": {
+            "model_module": "@jupyter-widgets/controls",
+            "model_name": "ButtonStyleModel",
+            "model_module_version": "1.5.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/controls",
+              "_model_module_version": "1.5.0",
+              "_model_name": "ButtonStyleModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "StyleView",
+              "button_color": null,
+              "font_weight": ""
+            }
+          },
+          "ad66d237b1f747b7b219dc87e8890b83": {
+            "model_module": "@jupyter-widgets/base",
+            "model_name": "LayoutModel",
+            "model_module_version": "1.2.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/base",
+              "_model_module_version": "1.2.0",
+              "_model_name": "LayoutModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "LayoutView",
+              "align_content": null,
+              "align_items": null,
+              "align_self": null,
+              "border": null,
+              "bottom": null,
+              "display": null,
+              "flex": null,
+              "flex_flow": null,
+              "grid_area": null,
+              "grid_auto_columns": null,
+              "grid_auto_flow": null,
+              "grid_auto_rows": null,
+              "grid_column": null,
+              "grid_gap": null,
+              "grid_row": null,
+              "grid_template_areas": null,
+              "grid_template_columns": null,
+              "grid_template_rows": null,
+              "height": null,
+              "justify_content": null,
+              "justify_items": null,
+              "left": null,
+              "margin": null,
+              "max_height": null,
+              "max_width": null,
+              "min_height": null,
+              "min_width": null,
+              "object_fit": null,
+              "object_position": null,
+              "order": null,
+              "overflow": null,
+              "overflow_x": null,
+              "overflow_y": null,
+              "padding": null,
+              "right": null,
+              "top": null,
+              "visibility": null,
+              "width": "195px"
+            }
+          },
+          "4a643d0e838f4d55aa194bad96b9cdae": {
+            "model_module": "@jupyter-widgets/controls",
+            "model_name": "ButtonStyleModel",
+            "model_module_version": "1.5.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/controls",
+              "_model_module_version": "1.5.0",
+              "_model_name": "ButtonStyleModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "StyleView",
+              "button_color": null,
+              "font_weight": ""
+            }
+          },
+          "2aa6cc98f4da40d49c19f650cb5cbd26": {
+            "model_module": "@jupyter-widgets/output",
+            "model_name": "OutputModel",
+            "model_module_version": "1.0.0",
+            "state": {
+              "_dom_classes": [],
+              "_model_module": "@jupyter-widgets/output",
+              "_model_module_version": "1.0.0",
+              "_model_name": "OutputModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/output",
+              "_view_module_version": "1.0.0",
+              "_view_name": "OutputView",
+              "layout": "IPY_MODEL_edf6d8e40f4142faa58813f30b527153",
+              "msg_id": "",
+              "outputs": [
+                {
+                  "output_type": "display_data",
+                  "data": {
+                    "text/plain": "<IPython.core.display.Javascript object>",
+                    "application/javascript": "\n    async function download(id, filename, size) {\n      if (!google.colab.kernel.accessAllowed) {\n        return;\n      }\n      const div = document.createElement('div');\n      const label = document.createElement('label');\n      label.textContent = `Downloading \"${filename}\": `;\n      div.appendChild(label);\n      const progress = document.createElement('progress');\n      progress.max = size;\n      div.appendChild(progress);\n      document.body.appendChild(div);\n\n      const buffers = [];\n      let downloaded = 0;\n\n      const channel = await google.colab.kernel.comms.open(id);\n      // Send a message to notify the kernel that we're ready.\n      channel.send({})\n\n      for await (const message of channel.messages) {\n        // Send a message to notify the kernel that we're ready.\n        channel.send({})\n        if (message.buffers) {\n          for (const buffer of message.buffers) {\n            buffers.push(buffer);\n            downloaded += buffer.byteLength;\n            progress.value = downloaded;\n          }\n        }\n      }\n      const blob = new Blob(buffers, {type: 'application/binary'});\n      const a = document.createElement('a');\n      a.href = window.URL.createObjectURL(blob);\n      a.download = filename;\n      div.appendChild(a);\n      a.click();\n      div.remove();\n    }\n  "
+                  },
+                  "metadata": {}
+                },
+                {
+                  "output_type": "display_data",
+                  "data": {
+                    "text/plain": "<IPython.core.display.Javascript object>",
+                    "application/javascript": "download(\"download_8fcdd426-aba7-4516-afec-995020445518\", \"Salary_Slip_subham_singh_Nov_2026.pdf\", 1489)"
+                  },
+                  "metadata": {}
+                },
+                {
+                  "output_type": "display_data",
+                  "data": {
+                    "text/plain": "<IPython.core.display.HTML object>",
+                    "text/html": "\n            <p>✅ <b>Salary_Slip_subham_singh_Nov_2026.pdf</b> has been downloaded to your computer.</p>\n            <a href=\"https://mail.google.com/mail/?view=cm&fs=1&to=shubham.van.121%40gmail.com&su=Salary%20Slip%20-%20Nov%202026%20%28subham%20singh%29&body=Dear%20subham%20singh%2C%0A%0APlease%20find%20attached%20your%20salary%20slip%20for%20Nov%202026.%0A%0ABest%20Regards%2C%0AHR%20%26%20Accounts%20Team\" target=\"_blank\" style=\"\n                display:inline-block; padding:10px 18px; background-color:#1a73e8;\n                color:white; text-decoration:none; border-radius:6px; font-weight:bold;\">\n                📩 Open Pre-filled Gmail for subham singh\n            </a>\n        "
+                  },
+                  "metadata": {}
+                }
+              ]
+            }
+          },
+          "edf6d8e40f4142faa58813f30b527153": {
+            "model_module": "@jupyter-widgets/base",
+            "model_name": "LayoutModel",
+            "model_module_version": "1.2.0",
+            "state": {
+              "_model_module": "@jupyter-widgets/base",
+              "_model_module_version": "1.2.0",
+              "_model_name": "LayoutModel",
+              "_view_count": null,
+              "_view_module": "@jupyter-widgets/base",
+              "_view_module_version": "1.2.0",
+              "_view_name": "LayoutView",
+              "align_content": null,
+              "align_items": null,
+              "align_self": null,
+              "border": null,
+              "bottom": null,
+              "display": null,
+              "flex": null,
+              "flex_flow": null,
+              "grid_area": null,
+              "grid_auto_columns": null,
+              "grid_auto_flow": null,
+              "grid_auto_rows": null,
+              "grid_column": null,
+              "grid_gap": null,
+              "grid_row": null,
+              "grid_template_areas": null,
+              "grid_template_columns": null,
+              "grid_template_rows": null,
+              "height": null,
+              "justify_content": null,
+              "justify_items": null,
+              "left": null,
+              "margin": null,
+              "max_height": null,
+              "max_width": null,
+              "min_height": null,
+              "min_width": null,
+              "object_fit": null,
+              "object_position": null,
+              "order": null,
+              "overflow": null,
+              "overflow_x": null,
+              "overflow_y": null,
+              "padding": null,
+              "right": null,
+              "top": null,
+              "visibility": null,
+              "width": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/shubhamvan121-collab/amazon-product-analysis/blob/main/salary%20slip%20automated%20project\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip install -q fpdf openpyxl ipywidgets\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "A2cb7OMOSUqS",
+        "outputId": "3c4157bf-137c-461a-882b-ddaea7b147e1"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "  Installing build dependencies ... \u001b[?25l\u001b[?25hdone\n",
+            "  Getting requirements to build wheel ... \u001b[?25l\u001b[?25hdone\n",
+            "  Preparing metadata (pyproject.toml) ... \u001b[?25l\u001b[?25hdone\n",
+            "  Building wheel for fpdf (pyproject.toml) ... \u001b[?25l\u001b[?25hdone\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "from fpdf import FPDF\n",
+        "import difflib\n",
+        "import urllib.parse\n",
+        "import ipywidgets as widgets\n",
+        "from IPython.display import display, clear_output, HTML\n",
+        "from google.colab import files\n",
+        "\n",
+        "# 1. Load Employee Database\n",
+        "df = pd.read_excel(\"database.xlsx\")\n",
+        "df.columns = df.columns.str.strip()\n",
+        "net_col = \"Net_Salary\" if \"Net_Salary\" in df.columns else (\"Net Salary\" if \"Net Salary\" in df.columns else df.columns[9])\n",
+        "\n",
+        "# Smart Search (Case-insensitive + Partial + Related Match)\n",
+        "def find_employee(query):\n",
+        "    query = query.strip().lower()\n",
+        "    if not query:\n",
+        "        return None\n",
+        "\n",
+        "    ids = df[\"Emp_ID\"].astype(str).str.strip().str.lower()\n",
+        "    names = df[\"Name\"].astype(str).str.strip().str.lower()\n",
+        "\n",
+        "    # Exact / partial match\n",
+        "    mask = ids.str.contains(query, regex=False, na=False) | names.str.contains(query, regex=False, na=False)\n",
+        "    if mask.any():\n",
+        "        return df[mask].iloc[0]\n",
+        "\n",
+        "    # Related / spelling match\n",
+        "    name_list = names.tolist()\n",
+        "    close_names = difflib.get_close_matches(query, name_list, n=1, cutoff=0.45)\n",
+        "    if close_names:\n",
+        "        return df[names == close_names[0]].iloc[0]\n",
+        "\n",
+        "    for idx, full_name in enumerate(name_list):\n",
+        "        if difflib.get_close_matches(query, full_name.split(), n=1, cutoff=0.6):\n",
+        "            return df.iloc[idx]\n",
+        "\n",
+        "    id_list = ids.tolist()\n",
+        "    close_ids = difflib.get_close_matches(query, id_list, n=1, cutoff=0.6)\n",
+        "    if close_ids:\n",
+        "        return df[ids == close_ids[0]].iloc[0]\n",
+        "\n",
+        "    return None\n",
+        "\n",
+        "# Generate PDF Salary Slip\n",
+        "def create_pdf(emp):\n",
+        "    month_val = emp[\"Month\"]\n",
+        "    month_str = month_val.strftime(\"%b %Y\") if hasattr(month_val, \"strftime\") else str(month_val)\n",
+        "\n",
+        "    pdf = FPDF()\n",
+        "    pdf.add_page()\n",
+        "    pdf.set_font(\"Arial\", \"B\", 16)\n",
+        "    pdf.cell(0, 12, f\"SALARY SLIP - {month_str}\", ln=True, align=\"C\")\n",
+        "    pdf.ln(6)\n",
+        "\n",
+        "    rows = [\n",
+        "        (\"Employee ID\", emp[\"Emp_ID\"]),\n",
+        "        (\"Employee Name\", emp[\"Name\"]),\n",
+        "        (\"Designation\", emp[\"Designation\"]),\n",
+        "        (\"Email\", emp[\"Email\"]),\n",
+        "        (\"Month\", month_str),\n",
+        "        (\"Basic Salary\", f\"Rs. {emp['Basic']}\"),\n",
+        "        (\"HRA\", f\"Rs. {emp['HRA']}\"),\n",
+        "        (\"Allowance\", f\"Rs. {emp['Allowance']}\"),\n",
+        "        (\"Deductions\", f\"Rs. {emp['Deductions']}\"),\n",
+        "        (\"Net Payable Salary\", f\"Rs. {emp[net_col]}\"),\n",
+        "    ]\n",
+        "\n",
+        "    for label, val in rows:\n",
+        "        pdf.set_font(\"Arial\", \"B\" if label == \"Net Payable Salary\" else \"\", 12)\n",
+        "        pdf.cell(65, 10, f\" {label}\", border=1)\n",
+        "        pdf.cell(0, 10, f\" {val}\", border=1, ln=True)\n",
+        "\n",
+        "    file_name = f\"Salary_Slip_{emp['Name']}_{month_str}.pdf\".replace(\" \", \"_\")\n",
+        "    pdf.output(file_name)\n",
+        "    return file_name, month_str\n",
+        "\n",
+        "# Dashboard UI\n",
+        "search_box = widgets.Text(\n",
+        "    placeholder=\"Enter Employee ID or Name (e.g., emp101, shubham)...\",\n",
+        "    description=\"🔍 Search:\",\n",
+        "    layout=widgets.Layout(width=\"400px\")\n",
+        ")\n",
+        "btn_view = widgets.Button(description=\"📄 View Salary Slip\", button_style=\"info\", layout=widgets.Layout(width=\"195px\"))\n",
+        "btn_send = widgets.Button(description=\"📧 Send to Gmail\", button_style=\"success\", layout=widgets.Layout(width=\"195px\"))\n",
+        "output_area = widgets.Output()\n",
+        "\n",
+        "# View Salary Slip\n",
+        "def on_view_click(b):\n",
+        "    with output_area:\n",
+        "        clear_output()\n",
+        "        emp = find_employee(search_box.value)\n",
+        "        if emp is None:\n",
+        "            print(\"❌ No matching employee found. Please check the Employee ID or Name.\")\n",
+        "            return\n",
+        "        file_name, month_str = create_pdf(emp)\n",
+        "        slip_df = pd.DataFrame({\n",
+        "            \"Field\": [\"Employee ID\", \"Name\", \"Designation\", \"Email\", \"Month\", \"Basic Salary\", \"HRA\", \"Allowance\", \"Deductions\", \"Net Payable Salary\"],\n",
+        "            \"Details\": [\n",
+        "                emp[\"Emp_ID\"], emp[\"Name\"], emp[\"Designation\"], emp[\"Email\"], month_str,\n",
+        "                f\"Rs. {emp['Basic']}\", f\"Rs. {emp['HRA']}\", f\"Rs. {emp['Allowance']}\", f\"Rs. {emp['Deductions']}\", f\"Rs. {emp[net_col]}\"\n",
+        "            ]\n",
+        "        })\n",
+        "        display(HTML(f\"<h3>📄 Salary Slip — {emp['Name']} ({month_str})</h3>\"))\n",
+        "        display(slip_df.style.hide(axis=\"index\"))\n",
+        "        print(f\"\\n✅ PDF ready: {file_name}\")\n",
+        "\n",
+        "#Download PDF & Open Pre-filled Gmail (No Password Required)\n",
+        "def on_send_click(b):\n",
+        "    with output_area:\n",
+        "        clear_output()\n",
+        "        emp = find_employee(search_box.value)\n",
+        "        if emp is None:\n",
+        "            print(\"❌ No matching employee found. Please check the Employee ID or Name.\")\n",
+        "            return\n",
+        "\n",
+        "        file_name, month_str = create_pdf(emp)\n",
+        "        files.download(file_name)\n",
+        "\n",
+        "        to_email = urllib.parse.quote(str(emp[\"Email\"]).strip())\n",
+        "        subject = urllib.parse.quote(f\"Salary Slip - {month_str} ({emp['Name']})\")\n",
+        "        body = urllib.parse.quote(\n",
+        "            f\"Dear {emp['Name']},\\n\\nPlease find attached your salary slip for {month_str}.\\n\\nBest Regards,\\nHR & Accounts Team\"\n",
+        "        )\n",
+        "        gmail_url = f\"https://mail.google.com/mail/?view=cm&fs=1&to={to_email}&su={subject}&body={body}\"\n",
+        "\n",
+        "        display(HTML(f\"\"\"\n",
+        "            <p>✅ <b>{file_name}</b> has been downloaded to your computer.</p>\n",
+        "            <a href=\"{gmail_url}\" target=\"_blank\" style=\"\n",
+        "                display:inline-block; padding:10px 18px; background-color:#1a73e8;\n",
+        "                color:white; text-decoration:none; border-radius:6px; font-weight:bold;\">\n",
+        "                📩 Open Pre-filled Gmail for {emp['Name']}\n",
+        "            </a>\n",
+        "        \"\"\"))\n",
+        "\n",
+        "btn_view.on_click(on_view_click)\n",
+        "btn_send.on_click(on_send_click)\n",
+        "\n",
+        "# Render Dashboard\n",
+        "display(HTML(\"<h2>💼 Automated Salary Slip Dashboard</h2>\"))\n",
+        "display(search_box, widgets.HBox([btn_view, btn_send]), output_area)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 193,
+          "referenced_widgets": [
+            "aad1c4c6cafd4f4abc9ad4d137c52fb3",
+            "590b3dd9d4a74d648ee81fbc3e46031f",
+            "f019ceaf3e304ff798e5cc6ca7c58aa4",
+            "d9624699e4e246d9924c8bde3c34a5d6",
+            "8590338d4bc34821a8f4616535b9f56a",
+            "16b81312735c4de39bb9217f6e9c25fd",
+            "1c088ff2da41422b9d6e15f98e03281a",
+            "8ba02700da48442a808211f62182c9a5",
+            "f71c84767a2e4b8586db4b5cb6355077",
+            "ad66d237b1f747b7b219dc87e8890b83",
+            "4a643d0e838f4d55aa194bad96b9cdae",
+            "2aa6cc98f4da40d49c19f650cb5cbd26",
+            "edf6d8e40f4142faa58813f30b527153"
+          ]
+        },
+        "id": "zNHuNFYwXnUK",
+        "outputId": "826f0eb8-3f16-49e6-f73d-75b605d5d783"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<h2>💼 Automated Salary Slip Dashboard</h2>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Text(value='', description='🔍 Search:', layout=Layout(width='400px'), placeholder='Enter Employee ID or Name (…"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "aad1c4c6cafd4f4abc9ad4d137c52fb3"
+            }
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "HBox(children=(Button(button_style='info', description='📄 View Salary Slip', layout=Layout(width='195px'), sty…"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "d9624699e4e246d9924c8bde3c34a5d6"
+            }
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Output()"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "2aa6cc98f4da40d49c19f650cb5cbd26"
+            }
+          },
+          "metadata": {}
+        }
+      ]
+    }
+  ]
+}
